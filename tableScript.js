@@ -5,7 +5,7 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
     // https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications#example_using_object_urls_to_display_images
     const username = document.getElementById("input-username").value;
     const email = document.getElementById("input-email").value;
-    const isAdmin = document.getElementById("input-admin").checked ? "x" : "-";
+    const isAdmin = document.getElementById("input-admin").checked ? "X" : "-";
     const imageInput = document.getElementById("input-image");
     const file = imageInput.files[0];
 
