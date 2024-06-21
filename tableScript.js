@@ -61,8 +61,7 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
 
     
     document.getElementById("user-form").reset();
-    //testit 2 ja 4 feilas, tämän pitäisi auttaa
-    URL.revokeObjectURL(imageSrc);
+    
 });
 
 function emptyTable() {
