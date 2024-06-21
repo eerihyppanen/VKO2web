@@ -71,3 +71,4 @@ function emptyTable() {
     
     
 }
+document.getElementById("empty-table").addEventListener("click", emptyTable);
