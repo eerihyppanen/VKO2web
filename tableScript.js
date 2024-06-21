@@ -1,7 +1,7 @@
 
 document.getElementById("user-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
     // https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications#example_using_object_urls_to_display_images
     const username = document.getElementById("input-username").value;
     const email = document.getElementById("input-email").value;
@@ -61,6 +61,8 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
 
     
     document.getElementById("user-form").reset();
+    //testit 2 ja 4 feilas, tämän pitäisi auttaa
+    URL.revokeObjectURL(imageSrc);
 });
 
 function emptyTable() {
