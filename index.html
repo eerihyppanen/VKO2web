@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tableScript.js" defer></script>
+    <style>
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <table id="user-table">
+        <thead>
+            <th>username</th>
+            <th>Email</th>
+            <th>Admin</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>mikko</td>
+            <td>jou@gmail.com</td>
+            <td>x</td>
+            <td><img src="https://via.placeholder.com/64" alt="User Image"></td>
+        </tr>
+
+        <tr>
+            <td>AnotherUser222</td>
+            <td>example@email.com</td>
+            <td>-</td>
+            <td><img src="https://via.placeholder.com/64" alt="User Image"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form id="user-form">
+        <label for="input-username">Username:</label>
+        <input type="text" id="input-username" required>
+
+        <label for="input-email">Email:</label>
+        <input type="email" id="input-email" required>
+
+        <label for="input-admin">Admin:</label>
+        <input type="checkbox" id="input-admin">
+
+        <label for="input-image">Image:</label>
+        <input type="file" id="input-image" name="input-image" accept="image/*">
+
+        <button type="submit" id="submit-data">Submit</button>
+    </form>
+
+    <button id="empty-table">Empty Table</button>
+
+
+    
+</body>
+</html>
