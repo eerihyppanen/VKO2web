@@ -67,12 +67,3 @@ function emptyTable() {
         tableBody.removeChild(tableBody.firstChild);
     }
 }
-
-document.getElementById("empty-table").addEventListener("click", emptyTable);
-
-const uploadButton = document.getElementById("upload")
-uploadButton.addEventListener("click", () => {
-    const file = document.getElementById("input-image").files[0]
-
-
-})
