@@ -42,13 +42,13 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
         usernameCell.textContent = username;
         emailCell.textContent = email;
         adminCell.textContent = isAdmin;
-        imageCell.innerHTML = `<img src="${imageSrc}" alt="User Image" width="64" height="64">`;
+        
 
         
         newRow.appendChild(usernameCell);
         newRow.appendChild(emailCell);
         newRow.appendChild(adminCell);
-        newRow.appendChild(imageCell);
+        
 
         
         tableBody.appendChild(newRow);
