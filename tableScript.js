@@ -9,7 +9,10 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
     const imageInput = document.getElementById("input-image");
     const file = imageInput.files[0];
 
-    const imageSrc = URL.createObjectURL(file);
+    let imageSrc = "";
+    if (file) {
+        imageSrc = URL.createObjectURL(file);
+    }
 
     const tableBody = document.querySelector("#user-table tbody");
     const rows = Array.from(tableBody.getElementsByTagName("tr"));
